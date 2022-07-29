@@ -5,3 +5,8 @@ Este proyecto freelance comenzó el día 28/07/2022, con el objetivo de ser una 
 No tiene login ya que el cliente lo solicitó de esta manera.
 A medida que vaya avanzando con el proyecto, las actualizaciones serán implementadas en este repo.
 
+Tecnologías utilizadas hasta el momento:
+  - Javascript
+  - HTML
+  - CSS
+
