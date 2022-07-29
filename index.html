@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huella Sagrada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+
+    <script src="https://kit.fontawesome.com/4b237b2d68.js" crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- GO TOP BUTTON -->
+<a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<!-- NAVBAR -->
+<nav class="navbar1">
+    <div class="navbar1_content">
+        <div class="navbar1_logo">
+            <a href=""><img src="img/logo_huella.jpg" alt="Logo"></a>
+        </div>
+        <ul class="navbar1_menu">
+            <div class="icon1 cancel_btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#home">Inicio</a></li>
+            <li class="nosotros"><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="icon1 menu_btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar responsive -->
+<script>
+    const body = document.querySelector("body");
+    const navBar1 = document.querySelector(".navbar1");
+    const menu1 = document.querySelector(".navbar1_menu");
+    const menuBtn = document.querySelector(".menu_btn");
+    const cancelBtn = document.querySelector(".cancel_btn");
+    menuBtn.onclick = ()=>{
+        menu1.classList.add("active");
+        menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = ()=>{
+        menu1.classList.remove("active");
+        menuBtn.classList.remove("hide");
+    }
+    menu1.onclick = ()=>{
+        menu1.classList.remove("active");
+        menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+        this.scrollY > 20 ? navBar1.classList.add("sticky") : navBar1.classList.remove("sticky");
+    }
+
+            $(window).scroll(function() {
+    if ($(window).scrollTop() > 50) {
+        $('.navbar1').css('background', 'white');
+        $('.navbar1').css('opacity', '0.9');	//Opacidad del navbar
+    } else {
+        $('.navbar1').css('background', 'transparent');
+    }
+    });
+</script>
+<!-- BANNER -->
+<div class="container-slider11">
+    <div class="slider1" id="slider11">
+        <div class="slider__section11">
+            <img class="slider__img11" id="image" src="img/legumbres.jpg" />
+        </div>
+    </div>
+    <div class="slider__btn11 slider__btn11--right" id="btn-right11">&#62</div>
+    <div class="slider__btn11 slider__btn11--left" id="btn-left11">&#60</div>
+</div>
+
+<!-- FUNCION SLIDER -->
+<script>
+    const slider11 = document.getElementById("#slider11");
+    const images = ['img/legumbres.jpg', 'img/aceite.jpg', 'img/cereales.jpg']
+    let slideIndex = 0;
+    const nextButton = document.getElementById('btn-right11');
+    const prevButton = document.getElementById('btn-left11');
+    const img = document.getElementById('image');
+
+    const applyNextImage = () => {
+        const nextIndex = (slideIndex + 1) % images.length;
+        
+        applyImage(nextIndex);
+        // applyNextImageStyles(nextIndex);
+        slideIndex = nextIndex;
+    }
+    const applyPrevImage = () => {
+        const nextIndex = slideIndex === 0 
+        ? images.length - 1 
+        :  (slideIndex - 1) % images.length;
+        
+        applyImage(nextIndex);
+        // applyPrevImagesStyles(nextIndex);
+        slideIndex = nextIndex;
+    }
+    const applyImage = (index) => { 
+        img.src = images[index];
+    }
+    nextButton.addEventListener('click', function(){ 
+        applyNextImage();
+    })
+    prevButton.addEventListener('click', function(){ 
+        applyPrevImage();
+    })
+    setInterval(function(){
+        applyNextImage();
+    }, 5000);
+</script>
+
+
+
+<!-- BANNER FOOT -->
+<section>
+    <div class="gray_foot">
+        <!-- <div class="container_logos">
+            <img src="img/box_svg.jpg" alt="">
+            <div class="texto_logos">
+                <p>Hacemos env&iacute;os a todo <br> el pa&iacute;s v&iacute;a OCA <br>
+                Hacemos env&iacute;os dentro de <br> Capital Federal por Motomensajer&iacute;a</p>
+            </div>
+            <img src="img/tarjetita.jpg" alt="">
+            <div class="texto_logos">
+                <p>Aceptamos distintos medios de pago <br>
+                Efectivo, mercado pago y transferencia bancaria</p>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+<!-- ESHOP SECTION -->
+<section>
+    <div class="eshop_section">
+        
+    </div>
+</section>
+
+    <script src="main.js"></script>
+</body>
+</html>
