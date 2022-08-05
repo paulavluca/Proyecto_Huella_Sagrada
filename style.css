@@ -159,6 +159,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: all .15s;
+    z-index: 10;
   }
   .to-top i{
     margin-left: 10px;
@@ -175,8 +176,8 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 200px;
-    background-color: rgba(243, 241, 241, 0.87);
+    height: 250px;
+    background-color: rgba(243, 241, 241, 0.76);
   }
 
   .container_logos{
@@ -195,12 +196,150 @@ body{
     font-size: 120%;
   }
 
-  .eshop_section{
-    background-color: #FFFFFF;
-    height: 700px;
+  /* US SECTION */
+  .nosotros_container{
+    height: 500px;
+    background-color: #FFF;
+    margin-top: -50px;
+    display: flex;
+  }
+
+  .nosotros_subcontainer{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(255, 136, 0);
+    border-radius: 0 1% 0 0;
+    opacity: 90%;
+    font-family: "Merriweather";
+  }
+
+  .nosotros_subcontainer2{
+    height: 100%;
+    width: 40%;
+    background-color: #FFF;
+    background-image: radial-gradient(ellipse farthest-corner at 10px 500px , rgb(255, 136, 0) 25%, rgba(0, 255, 0, 0) 0%, #FFF 70%);;
+    /* background-image: url("img/img_back_frutos_taza.jpg"); 
+    justify-items: right;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: auto auto;
+    background-repeat: no-repeat; */
+    opacity: 0.5; 
+  }
+  
+  .nosotros_subcontainer h1{
+    margin-left: 40%;
+    font-size: 38px;
+    font-weight:100;
+    text-align: right;
+    line-height: 150%;
+    border-bottom: 2px solid;
+    position: absolute;
+    color: #000;
+    /* text-align: left; */
+  }
+
+  .nosotros_subcontainer p{
+    margin-top: 25%;
+    margin-left: 23%;
+    margin-right: 5%;
+    text-align: right;
+    position: relative;
+  }
+
+  .rectangulo_blanco{
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    border: 4px solid;
+    border-color: #FFF;
+    margin-top: -17%;
+    margin-left: 8%;
+  }
+
+  .container_redes{
+    position: relative;
+    height: 17%;
+    width: 5%;
+    background-color: #FFF;
+    color: #FFF;
+    margin-top: -28.3%;
+    margin-left: 8.7%;
+    border-radius: 8% 0 0 8%;
+  }
+
+  .container_redes:hover{
+    cursor: pointer;
+    background-color: rgb(253, 244, 236);
+  }
+
+  .container_redes p{
+    position: relative;
+    text-align: center;
+    color: #000;
   }
 
   /* COLOR LOGOS #E2700B*/
+  /* ESHOP SECTION */
+    .eshop_section{
+    text-align: center;
+    background-color: white;
+  }
+  .eshop_section h1{
+    color: #E2700B;
+    font-size: 38px;
+    margin-top: 80px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .img_bag{
+    text-align: center;
+    margin-top: -25px;
+  }
+  .img_bag img{
+    height: 180px;
+    width: 180px;
+    
+  }
+
+  /* DOUBLE SECTION */
+  .container_double_section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .granel_section{
+    cursor: pointer;
+  }
+
+  .env_section{
+    cursor: pointer;
+  }
+
+  /* END BUTTON */
+  .finish_button{
+    text-align: center;
+  }
+  .finish_button button{
+    background-color: #E2700B;
+    color: #FFF;
+    height: 50px;
+    width: 180px;
+    border-radius: 20px;
+    border-color: #E2700B;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: black;
+  }
+
+  .finish_button button:hover{
+    background-image: linear-gradient(#ffc18f, #ff841f);
+    color: #FFF;
+    border-color: #ff841f;
+    transition: 15s;
+  }
 
 @media screen and (max-width: 830px) {
 	.navbar1 .navbar1_menu{
