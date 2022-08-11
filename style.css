@@ -180,6 +180,15 @@ body{
     background-color: rgba(243, 241, 241, 0.76);
   }
 
+  .images_gray{
+    display: flex;
+    justify-content: space-around;
+  }
+  .images_gray img{
+    height: 150px;
+    width: 150px;
+  }
+
   .container_logos{
     display: flex;
     justify-content: center;
@@ -278,25 +287,41 @@ body{
   /* DELIVERY SECTION */
   .map_dias_envios{
     display: flex;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    background-image: url(./img/pexels-gdtography-950241.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     /* justify-content: space-between; */
   }
 
   .container_envios{
-    height: 350px;
+    height: 100%;
     width: 100vh;
     position: relative;
   }
 
   .container_envios ul{
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(0, -50%);
   }
 
   .container_envios ul li{
     list-style-type: none;
     font-size: 2em;
-    padding: 30px 0 0 40px;
+    padding: 40px 0 0 40px;
+  }
+
+  /* DAYS & HOVERS */
+  .lunes_envios{
+    cursor: pointer;
+  }
+  .lunes_envios:hover{
+    color: #fca55e;
+    text-decoration: overline;
   }
   .martes_envios{
     cursor: pointer;
@@ -310,20 +335,57 @@ body{
   .miercoles_envios:hover{
     color: #fca55e;
   }
+  .jueves_envios{
+    cursor: pointer;
+  }
+  .jueves_envios:hover{
+    color: #fca55e;
+  }
+  .viernes_envios{
+    cursor: pointer;
+  }
+  .viernes_envios:hover{
+    color: #fca55e;
+    text-decoration: underline;
+  }
 
-  .txt_img_envios p{
+  /* .txt_img_envios p{
     transform: rotate(270deg);
-    margin-left: -200%;
-    margin-top: -5%;
+    margin-left: -255%;
+    margin-top: -30%;
     font-size: 35px;
     font-family: "Open sans";
-  }
+  } */
 
   .txt_img_envios span{
     font-family: "Open sans";
     font-size: 35px;
     padding: 0;
-    margin-left: 0;
+    margin-left: -45%;
+  }
+
+  .mapa_envios{
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .mapa_envios img{
+    height: 40%;
+    width: 60%;
+    margin-top: 8%;
+  } 
+
+  .pin_lunes{
+    display: none;
+  }
+  .lunes_envios:hover .pin_lunes{
+    display: block;
+  }
+  .mapa_envios p{
+    font-size: 2em;
+    color: #000;
+    transform: rotate(90deg);
+    margin: 15% -30% 0 0;
   }
 
   /* COLOR LOGOS #E2700B*/
@@ -358,7 +420,7 @@ body{
     height: 30px;
     width: 100%;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 0;
     overflow: hidden;
   }
   .p0_banner{
@@ -431,6 +493,10 @@ body{
   .nav_tienda ul li{
     cursor: pointer;
   }
+  .nav_tienda ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
   .nav_tienda li:not(:last-child) {
     margin-right: 20px;
@@ -451,6 +517,15 @@ body{
   .nav_tienda a,
   .target {
     transition: all .35s ease-in-out;
+  }
+
+  /* GRANEL SECTION */
+  .granel_section{
+    height: 800px;
+    width: 100vh;
+  } 
+  .granel_section p{
+    text-align: center;
   }
 
   /* END BUTTON */
