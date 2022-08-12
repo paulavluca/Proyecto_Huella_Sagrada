@@ -31,7 +31,7 @@ window.onscroll = ()=>{
     this.scrollY > 20 ? navBar1.classList.add("sticky") : navBar1.classList.remove("sticky");
 }
 
-        $(window).scroll(function() {
+    (window).scroll(function() {
 if ($(window).scrollTop() > 50) {
     $('.navbar1').css('background', 'white');
     $('.navbar1').css('opacity', '0.9');	//Opacidad del navbar
@@ -94,3 +94,24 @@ if ($(window).scrollTop() > 50) {
     window.addEventListener("resize", resizeFunc);
 
 })();
+
+/* ADD REST BUTTON */
+const plus = document.querySelector(".plus"),
+minus = document.querySelector(".minus"),
+num = document.querySelector(".num");
+
+let a = 0;
+
+plus.addEventListener("click", ()=>{
+    a++;
+    // a = (a < 10) ? "0" + a : a;
+    num.innerText = a;
+    console.log(a);
+});
+minus.addEventListener("click", ()=>{
+    if(a > 0){
+        a--;
+        // a = (a > 1) ? "0" + a : a;
+        num.innerText = a;
+    }
+});
