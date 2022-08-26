@@ -162,7 +162,7 @@ body{
     z-index: 10;
   }
   .to-top i{
-    margin-left: 10px;
+    margin-left: 10.5px;  /* CENTRAR */
   }
 
   .to-top.active{
@@ -199,26 +199,38 @@ body{
     width: 150px;
 
   }
+
+  /* Las olas y el viento sucundum sucundum */
+  .wave1{
+    position: absolute;
+    opacity: 0.9;
+  }
+  .wave2{
+    position: absolute;
+    opacity: 0.6;
+  }
+  .wave3{
+    margin-top: -90px;
+    /* opacity: 0.1; */
+  }
   
-  .wave1 img{
+  /* .wave1 img{
     padding-top: 0;
-    margin-top: 0;
     opacity: 0.8;
     position: relative;
     margin-top: 50px;
   }
   .wave2 img{
-    padding-top: 0;
-    margin-top: -300px;
+    margin-top: -320px; 
     opacity: 0.9;
     position: relative;
   }
   .wave3 img{
-    padding-top: -100px;
-    margin-top: -600px;
+    padding-top: 0;
+    /* margin-top: -600px; 
     opacity: 0.4;
     position: relative;
-  }
+  } */
 
   /* .container_logos{
     display: flex;
@@ -238,12 +250,29 @@ body{
 
   /* US SECTION */
   .container_orange{
-    height: 350px;
+    height: 450px;
     background-color:  rgb(255, 136, 0) !important;
     padding-top: 0; 
-    margin-top: -30px;
+    margin-top: -20px;
   }
 
+  .gif1 span p{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 18%;
+    font-family: "Open sans", sans-serif;
+    color: gray;
+  }
+
+  .gif2 span p{
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 21%;
+    font-family: "Open sans", sans-serif;
+    color: gray;
+    font-weight: 100;
+    text-align: right;
+  }
 
   /* */
   .nosotros_container{
@@ -251,6 +280,14 @@ body{
     background-color: #FFF;
     margin-top: -50px;
     display: flex;
+  }
+
+  .about_us{
+    color: #FFF;
+    font-size: 2em;
+    font-family: "Open sans", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
   }
 
   .nosotros_subcontainer{
