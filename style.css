@@ -250,7 +250,7 @@ body{
 
   /* US SECTION */
   .container_orange{
-    height: 450px;
+    height: 400px;
     background-color:  rgb(255, 136, 0) !important;
     padding-top: 0; 
     margin-top: -20px;
@@ -286,8 +286,20 @@ body{
     color: #FFF;
     font-size: 2em;
     font-family: "Open sans", sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 3px;
+  }
+
+  .about_us_p1{
+    color: #FFF;
+    text-align: justify;
+    font-family: "Open sans", sans-serif;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin-top: -20px;
   }
 
   .nosotros_subcontainer{
@@ -799,43 +811,99 @@ body{
     background-color: #000;
     height: 200px;
   }
-  .container_footer p{
-    color: #FFF;
-    font-size: 1.2em;
-    letter-spacing: 5px;
-    font-family: sans-serif;
-    text-align: center;
-    padding-top: 3%;
-    font-weight: 600;
-  }
+  
   /* .container_footer span{
     position: relative;
     z-index: 1;
     color: white;
   } */
-  .container_footer hr{
-    width: 35%;
-    text-align: center;
-    font-weight: 300;
-  }
 
-  .logos_footer{
+  .huella{
     color: #FFF;
-    display: flex;
-    align-items: center;
-  }
-
-  .logos2_footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-  }
-  .logos2_footer span{
-    font-family: sans-serif;
-    color: #FFF;
-    padding-left: 30px;
+    text-transform: uppercase;
+    font-family: "Bahnschrift";
+    font-weight: 400;
+    letter-spacing: 8px;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 4%;
   }
   
+  .sagrada{
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: "Bahnschrift";
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 8px;
+    text-align: left;
+    margin-left: 6%;
+    margin-top: -15px;
+  }
+
+  .linea{
+    margin: 1% 84.5% 0 30px;
+  }
+
+  .alimentos{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+  }
+
+  .container_footer img{
+    height: 50px;
+    width: 50px;
+    margin: -7% 0 0 1.5%;
+    padding: 0;
+    position: absolute;
+  }
+
+  .datos_footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: -6.5%;
+  }
+
+  .numero p{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+  .mail p{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 1px;
+  }
+  .ubicacion{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .redes_footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: -8.5%;
+    margin-left: 75%;
+  }
+
+  .redes_footer_p{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+  }
+
+  .redes_in_p{
+    color: #FFF;
+    font-family: "Open-sans", sans-serif;
+  }
 
 @media screen and (max-width: 830px) {
 	.navbar1 .navbar1_menu{
