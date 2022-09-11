@@ -127,7 +127,7 @@ const op2Text = document.getElementById("op-2-text");
 btnop1.onclick = function(){
     op1Text.style.display = "block";
     op2Text.style.display = "none";
-    btnop1.style.borderBottom = "8px solid #1f0000";
+    btnop1.style.borderBottom = "3px solid #E2700B";
     btnop2.style.borderBottom = "none";
 }
 
@@ -135,5 +135,5 @@ btnop2.onclick = function(){
     op1Text.style.display = "none";
     op2Text.style.display = "block";
     btnop1.style.borderBottom = "none";
-    btnop2.style.borderBottom = "8px solid #1f0000";
+    btnop2.style.borderBottom = "3px solid #E2700B";
 }
