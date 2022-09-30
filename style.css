@@ -176,7 +176,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 200px;
     /* background-color: rgba(226, 224, 224, 0.904); */
     background-color: #FFF;
     position: relative;
@@ -223,66 +223,31 @@ body{
     margin-top: 0;
     position: relative;
     z-index: 2 !important;
+    width: 100%;
   }
-  .wave1{
+  .waves_orange img{
+    width: 100%;
+    height: 300px;
+  }
+  .waves_orange2{
     padding: 0;
-    position: absolute;
-    opacity: 0.5;
-    z-index: 4 !important;
-    margin-top: 5px;
-  }
-  .wave2{
-    padding: 0;
-    position: absolute;
-    z-index: 3;
-    margin-top: 15px;
-  }
-  .wave3{
-    padding: 0;
-    opacity: 0.7; 
-    margin-top: -5%;
-    z-index: 2 !important;
-  }
-  
-  /* .wave1 img{
-    padding-top: 0;
-    opacity: 0.8;
+    margin-top: 0;
     position: relative;
-    margin-top: 50px;
+    width: 100%;
+    z-index: -2;
   }
-  .wave2 img{
-    margin-top: -320px; 
-    opacity: 0.9;
-    position: relative;
+  .waves_orange2 img{
+    width: 100% !important;
+    margin-top: -200px;
   }
-  .wave3 img{
-    padding-top: 0;
-    /* margin-top: -600px; 
-    opacity: 0.4;
-    position: relative;
-  } */
-
-  /* .container_logos{
-    display: flex;
-    justify-content: center;
-  }
-
-  .container_logos img{
-    height: 100px;
-  }
-
-  .texto_logos p{
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-top: 30px;
-    font-size: 120%;
-  } */
 
   /* US SECTION */
+  .container_orange_section{
+    height: 750px;
+  }
   .container_orange{
-    height: 430px;
-    background-color: blue;
-    background-color:  rgb(255, 136, 0) !important; 
+    height: 800px;
+    background-color: #FF6900 !important; 
     margin-top: -40px;
     z-index: 99 !important;
     opacity: 1;
