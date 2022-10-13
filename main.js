@@ -130,6 +130,12 @@ const miercoles_op = document.getElementById("op-3-miercoles");
 const jueves_op = document.getElementById("op-4-jueves");
 const viernes_op = document.getElementById("op-5-viernes");
 
+lunes_op.style.display = "block";
+martes_op.style.display = "none";
+    miercoles_op.style.display = "none";
+    jueves_op.style.display = "none";
+    viernes_op.style.display = "none";
+
 
 lunes.onclick = function(){
     lunes_op.style.display = "block";
