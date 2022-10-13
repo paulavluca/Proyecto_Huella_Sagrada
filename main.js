@@ -117,7 +117,61 @@ if ($(window).scrollTop() > 50) {
 // });
 
 
-/* */
+/* Funcion selector dias envios */
+const lunes = document.getElementById("lunes-1");
+const martes = document.getElementById("martes-2");
+const miercoles = document.getElementById("miercoles-3");
+const jueves = document.getElementById("jueves-4");
+const viernes = document.getElementById("viernes-5");
+
+const lunes_op = document.getElementById("op-1-lunes");
+const martes_op = document.getElementById("op-2-martes");
+const miercoles_op = document.getElementById("op-3-miercoles");
+const jueves_op = document.getElementById("op-4-jueves");
+const viernes_op = document.getElementById("op-5-viernes");
+
+
+lunes.onclick = function(){
+    lunes_op.style.display = "block";
+    martes_op.style.display = "none";
+    miercoles_op.style.display = "none";
+    jueves_op.style.display = "none";
+    viernes_op.style.display = "none";
+}
+
+martes.onclick = function(){
+    martes_op.style.display = "block";
+    lunes_op.style.display = "none";
+    miercoles_op.style.display = "none";
+    jueves_op.style.display = "none";
+    viernes_op.style.display = "none";
+}
+
+miercoles.onclick = function(){
+    miercoles_op.style.display = "block";
+    martes_op.style.display = "none";
+    lunes_op.style.display = "none";
+    jueves_op.style.display = "none";
+    viernes_op.style.display = "none";
+}
+
+jueves.onclick = function(){
+    jueves_op.style.display = "block";
+    miercoles_op.style.display = "none";
+    martes_op.style.display = "none";
+    lunes_op.style.display = "none";
+    viernes_op.style.display = "none";
+}
+
+viernes.onclick = function(){
+    viernes_op.style.display = "block";
+    jueves_op.style.display = "none";
+    miercoles_op.style.display = "none";
+    martes_op.style.display = "none";
+    lunes_op.style.display = "none";
+}
+
+/* Funcion selector granel - envasados */
 
 const btnop1 = document.getElementById("op-1");
 const btnop2 = document.getElementById("op-2");
