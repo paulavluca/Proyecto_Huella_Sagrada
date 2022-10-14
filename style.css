@@ -198,9 +198,9 @@ body{
   }
 
   .gif1 img{
-    padding-top: 10px;
-    height: 200px;
-    width: 200px;
+    padding-top: 30px;
+    height: 150px;
+    width: 150px;
     position: absolute;
     align-items: center;
     margin: 0 auto;
@@ -373,6 +373,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-size: cover;
     display: flex;
     /*position: relative;*/
+  }
+
+  .container_envios h1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 275px;
+    font-size: 180%;
+    letter-spacing: 2px;
   }
 
   .item1{
@@ -931,7 +939,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     height: 50px;
     width: 50px;
     padding: 0;
-    margin-top: -5%;
+    margin-top: -6%;
     margin-left: 3%;
     position: absolute;
   }

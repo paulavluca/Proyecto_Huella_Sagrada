@@ -143,6 +143,13 @@ lunes.onclick = function(){
     miercoles_op.style.display = "none";
     jueves_op.style.display = "none";
     viernes_op.style.display = "none";
+
+    /* COLOR NARANJA AL CLICKEAR*/
+    lunes_op.style.color = "fca55e";
+    martes_op.style.color = "#000";
+    miercoles_op.style.color = "#000";
+    jueves_op.style.color = "#000";
+    viernes_op.style.color = "#000";
 }
 
 martes.onclick = function(){
